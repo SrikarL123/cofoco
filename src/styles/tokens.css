@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;1,500&family=Hanken+Grotesk:wght@400;500;600&display=swap');
+:root{--bg:#050505;--bg-2:#0B0B0B;--card:#111;--card-2:#161616;--gold:#D6B15E;--champagne:#F0D38B;--ivory:#F4F0E7;--muted:#99958B;
+--line:rgba(214,177,94,.16);--line-strong:rgba(214,177,94,.38);--gold-wash:rgba(214,177,94,.08);--accent:var(--gold);
+--display:'Bodoni Moda',Georgia,serif;--ui:'Hanken Grotesk',system-ui,sans-serif;--r-sm:2px}
+[data-character=arjun]{--accent:#7FA3C7}[data-character=bheema]{--accent:#B07A4F}[data-character=karna]{--accent:#E0963A}
+[data-character=sita]{--accent:#EDE6D3}[data-character=draupadi]{--accent:#B5636F}[data-character=savitri]{--accent:#8C9456}

@@ -1,0 +1,17 @@
+import { Route, Routes } from 'react-router-dom'
+import Layout from './components/Layout'
+import Home from './pages/Home'
+import Shop from './pages/Shop'
+import Character from './pages/Character'
+import KitPage from './pages/Kit'
+import Cart from './pages/Cart'
+import NotFound from './pages/NotFound'
+import Compare from './pages/Compare'
+import Checkout from './pages/Checkout'
+import Confirmation from './pages/Confirmation'
+import Track from './pages/Track'
+import { Philosophy,Policies,Contact,Terms,Shipping,Returns,Privacy } from './pages/Info'
+import { lazy, Suspense } from 'react'
+import { Staff } from './pages/Dashboards'
+const Founder=lazy(()=>import('./pages/Founder'))
+export default function App(){return <Routes><Route element={<Layout/>}><Route index element={<Home/>}/><Route path="shop" element={<Shop/>}/><Route path="characters/:slug" element={<Character/>}/><Route path="kits/:slug" element={<KitPage/>}/><Route path="cart" element={<Cart/>}/><Route path="compare" element={<Compare/>}/><Route path="checkout" element={<Checkout/>}/><Route path="confirmation/:id" element={<Confirmation/>}/><Route path="track" element={<Track/>}/><Route path="philosophy" element={<Philosophy/>}/><Route path="policies" element={<Policies/>}/><Route path="contact" element={<Contact/>}/><Route path="terms" element={<Terms/>}/><Route path="shipping" element={<Shipping/>}/><Route path="returns" element={<Returns/>}/><Route path="privacy" element={<Privacy/>}/><Route path="staff" element={<Staff/>}/><Route path="founder" element={<Suspense fallback={<p className="wrap band">Loading dashboard…</p>}><Founder/></Suspense>}/><Route path="*" element={<NotFound/>}/></Route></Routes>}
